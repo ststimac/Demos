@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿var SINGLE_CYCLE = 16.7;
-=======
 var SINGLE_CYCLE = 16.7;
->>>>>>> MicrosoftEdge/master
 
 var debug = false, started = false;
 var sceneLeft, sceneTop, sceneWidth, sceneHeight;
@@ -40,19 +36,9 @@ function ResizeScene() {
 }
 
 function StartPenguinMark() {
-<<<<<<< HEAD
     if (started == false) {
         started = true;
-        document.getElementById("WelcomeScreen").style.opacity = 0;
-=======
-
-    var welcomeScreen = document.getElementById("WelcomeScreen");
-
-    if (started == false) {
-        started = true;
-        welcomeScreen.style.display = "none";
-        welcomeScreen.setAttribute("aria-hidden", "true");
->>>>>>> MicrosoftEdge/master
+        document.getElementById("WelcomeScreen").style.display = "none";
         document.getElementById("AudioEntryElement").pause();
         document.getElementById("AudioTrackElement").play();
         characters.Start();
